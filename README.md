@@ -13,15 +13,9 @@ A Python-based smart-receptionist prototype for Misty. It brings together a QR-c
 
 The main entry point is `programs/__main__.py`. `additional_files/` contains earlier receptionist iterations, a QR generator, and experiments; QR test images are in `qr_codes/`. A project document is also provided as `Documentation.docx`.
 
-## Requirements and running
+## Requirements
 
 The entry-point documentation lists these Python dependencies: `misty-sdk`, `websocket-client`, `opencv-python-headless`, `gpt4all`, `typer`, `image`, `pyaudio`, `speechrecognition`, and `pyttsx3`. Audio and model-runtime support may also require operating-system packages; see the entry-point notes and GPT4All documentation for platform-specific setup.
-
-From the repository root, run the program as a module:
-
-```bash
-python -m programs
-```
 
 The program asks whether to use its text-only interface. The connected-robot path requires a reachable Misty and compatible camera/audio setup. GPT4All may need to download the selected model the first time it is used. Review and configure the robot connection settings in the entry point before running it in your environment.
 
